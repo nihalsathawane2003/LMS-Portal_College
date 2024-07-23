@@ -1,0 +1,244 @@
+/* Existing Carousel Styles */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Ensure overflow is hidden */
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1800px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-container {
+  flex-grow: 1;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.carousel-image {
+  box-shadow: 0 0 8px #222;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .carousel-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .arrow-button {
+    padding: 5px;
+  }
+
+  .text-container {
+    padding: 20px 0;
+  }
+
+  .carousel-image {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .text-container h1 {
+    font-size: 1.5em;
+  }
+
+  .text-container p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h1 {
+    font-size: 1.2em;
+  }
+
+  .text-container p {
+    font-size: 0.9em;
+  }
+
+  .arrow-button {
+    padding: 2px;
+  }
+}
+
+/* New Departments Section Styles */
+.departments-section {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.departments-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.departments-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive Department Cards */
+.department-card {
+  background-color: #f2f6f7;
+  border-radius: 10px;
+  padding: 40px; /* Reduced padding for better fit on smaller screens */
+  margin: 50px; /* Reduced margin for better fit on smaller screens */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out; /* Adjusted transition duration */
+  width: 100%; /* Adjusted width for responsive design */
+  max-width: 200px; /* Maximum width to prevent overflow */
+
+}
+
+.department-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.department-card {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.department-card:hover {
+  transform: scale(1.05);
+}
+
+.department-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+.department-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.department-card p {
+  
+  margin: 5px 0;
+}
+.department-card p a {
+  text-decoration: none;
+  color: #070404;
+
+}
+
+/* Button Style */
+.view-department-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: #070404;
+  background-color: white; /* Adjust this color to match the purple shade */
+  border-radius: 25px;
+  text-decoration: none;
+  border: 1px solid #09407a;
+  transition: background-color 0.3s;
+}
+
+.view-department-link:hover {
+  background-color: #294a70;
+  color: #fff;
+  /* Adjust this color for hover effect */
+}
+
+/* Responsive styles for departments section */
+@media (max-width: 768px) {
+  .department-card {
+    width: 150px; /* Reduced width for better fit on smaller screens */
+  }
+
+  .department-card h3 {
+    font-size: 1em;
+  }
+
+  .department-card p {
+    font-size: 0.9em;
+  }
+
+  .view-department-link {
+    font-size: 0.9em;
+    padding: 8px 16px; /* Adjusted padding for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .department-card {
+    width: 100%;
+    margin: 10px 0; /* Adjusted margin for better fit */
+  }
+
+  .department-card h3 {
+    font-size: 0.9em;
+  }
+
+  .department-card p {
+    font-size: 0.8em;
+  }
+
+  .view-department-link {
+    font-size: 0.8em;
+    padding: 6px 12px; /* Adjusted padding for better fit */
+  }
+}

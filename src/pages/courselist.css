@@ -1,0 +1,33 @@
+/* CourseList.css */
+
+.course-list-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.course-list-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.course-list li:nth-child(odd) {
+    background-color: #f1f1f1;
+}

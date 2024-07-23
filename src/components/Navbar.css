@@ -1,0 +1,34 @@
+.navbar {
+  background-color:#49688e; 
+  color: white;
+  padding: 17px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin:  10px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 10pt;
+  border-left: 1px solid #fff;
+  float: left;
+  line-height: 1.1;
+  list-style: outside none none;
+  margin-left: 15px;
+  padding-left: 15px;
+
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}

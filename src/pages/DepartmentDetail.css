@@ -1,0 +1,94 @@
+.department-detail-container {
+  padding: 20px;
+  text-align: center;
+  background:#f4f4f4;
+  min-height:100%;
+  
+}
+
+.department-detail-container h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.department-detail-container p {
+  font-size: 1.2em;
+  color: #230a0a;
+  margin-bottom: 30px;
+}
+
+.years-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:50px; /* Gap between the items */
+}
+
+.year-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1 0 21%; /* Adjusted to ensure proper spacing */
+  max-width: 200px;
+  margin: 10px; /* Added margin for extra space */
+}
+
+.folder-icon {
+  width: 100%;
+  height: 150px;
+  background-color: #49688e;
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  margin: 20px; /* Added margin for extra space */
+}
+
+.folder-icon::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  width: 80%;
+  height: 40px;
+  background-color: #c6ccd3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid #294a70;
+  border-bottom: none;
+  z-index: -1;
+
+}
+
+.folder-icon span {
+  position: relative;
+  z-index: 1;
+}
+
+.folder-icon p {
+  margin: 0;
+  font-size: 0.9em;
+  color: white;
+}
+
+.folder-icon:hover {
+  background-color: #294a70;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.folder-icon-image {
+  font-size: 2.5em;
+  color: #fcfafa;
+  margin-bottom: 10px;
+}
